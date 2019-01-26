@@ -14,18 +14,18 @@
 - Describe how we will store and retrieve information from a SQL database for a
 recorded fuel stop. Provide a minimal two table definition of “Stops” and
        “Fuel delivery event”
-- ## Demonstrate delivery reporting capability by writing two SQL queries to show
+ # Demonstrate delivery reporting capability by writing two SQL queries to show
 the following:
-o Top 10 fuel consuming “Stops” over the past 12 months.
-o Average fuel consumption per delivery, listed by “Stop” for the month.
-Limitations/extra info:
+- Top 10 fuel consuming “Stops” over the past 12 months.
+- Average fuel consumption per delivery, listed by “Stop” for the month.
+# Limitations/extra info:
 - Trucks are limited to certain “operating regions” and need to be displayed to the dispatcher by “operating region”
 - The truck’s embedded system only “knows” three things: current fuel level, current stop, and next stop.
 - The truck does not have its next stop set remotely, it must poll the service for a new stop.
 - “Stops” are unique identifiers for customer locations. (though the truck can be set to a special “stop” to instruct it to return for refill)
 
 ### Technologies Used
-6f13fdce4c40a2d4bac9aa00e46619c765111403
+
 - `ASP.NET WEB API`
  
 
