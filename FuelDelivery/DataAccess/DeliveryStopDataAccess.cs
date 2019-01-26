@@ -21,7 +21,7 @@ namespace FuelDelivery.DataAccess
             }
         }
 
-        //-------------------------------------------------------
+//-------------------------------------------------------
         public IEnumerable<dynamic> GetAvgfuelconsumptionPerCustomer()
         {
             using (var Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["FuelDelivery"].ConnectionString))
@@ -40,7 +40,7 @@ namespace FuelDelivery.DataAccess
                 return result.ToList();
             }
         }
-        //-------------------------------------------------------
+//-------------------------------------------------------
         // add new stop data 
         public int AddNewStopSata(DeliveryStop deliveryStop)
         {
@@ -54,7 +54,7 @@ namespace FuelDelivery.DataAccess
             }
         }
 
-        //--------------------------------------------------------
+//--------------------------------------------------------
         // check the current fuel level for today
         public string CurrentFuelLevel()
         {
