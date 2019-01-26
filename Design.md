@@ -2,7 +2,7 @@
 
 #### Create a design consisting of any combination of code, pseudo-code, or diagrams that can help us set the roadmap for creating this new system.
  `the FlowChart`
-![Blog Screengrab](https://github.com/Sanyyouisf/Fuel-Delivery/blob/master/Requirements/FlowChart.jpg)
+![Blog Screengrab](https://github.com/Sanyyouisf/Fuel-Delivery/blob/master/pic/FlowChart.jpg)
 
 #### Provide a high-level outline for how these classes will be used to maintain a current “state”. 
 
