@@ -23,7 +23,7 @@
 
 `DeliveryEvent` : has data about which truck will go to deliver the gas and the date.
 
-*  `DeliveryStop` : has data about each stop, like the customer name, how many gallons it delivered to this customer and the DeliveryEventId used. 
+`DeliveryStop` : has data about each stop, like the customer name, how many gallons it delivered to this customer and the DeliveryEventId used. 
 
 - After the truck finishes fueling at the first stop, the dispatcher will calculate how many gallons delivered to this stop- we will insert a new row in the ‘DeliverStop’ table. So, here we will have a record that has data about the name of the customer, how many gallons, and the date of delivery. 
 
