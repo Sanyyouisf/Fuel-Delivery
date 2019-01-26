@@ -1,5 +1,9 @@
 ### Requirements
 
+#### Create a design consisting of any combination of code, pseudo-code, or diagrams that can help us set the roadmap for creating this new system.
+ `the FlowChart`
+![Blog Screengrab](https://github.com/Sanyyouisf/Fuel-Delivery/blob/master/Requirements/FlowChart.jpg)
+
 #### Provide a high-level outline for how these classes will be used to maintain a current “state”. 
 
 - The ‘DeliveryStop’ class will have all the details that we need to know in each stop, like the customer name, how many Gallons delivered to this customer. Also, it will take the truck information from the ‘DeliveryEvent’ class, like the truck plate number and service date.
@@ -11,13 +15,13 @@
 
 - We have five tables:
 
-* `Truck` : has data about the truck, like plate number, and driver name.
+`Truck` : has data about the truck, like plate number, and driver name.
 
-* `OperatingRegion` : has data about the different regions like the region name.
+`OperatingRegion` : has data about the different regions like the region name.
 
-* `Customer` : has data about the customer like the name, belong to which region and the max capacity.
+`Customer` : has data about the customer like the name, belong to which region and the max capacity.
 
-* `DeliveryEvent` : has data about which truck will go to deliver the gas and the date.
+`DeliveryEvent` : has data about which truck will go to deliver the gas and the date.
 
 *  `DeliveryStop` : has data about each stop, like the customer name, how many gallons it delivered to this customer and the DeliveryEventId used. 
 
