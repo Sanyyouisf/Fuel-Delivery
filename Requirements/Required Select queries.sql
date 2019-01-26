@@ -1,4 +1,5 @@
---Top 10 fuel consuming “Stops” over the past 12 months.
+--Top 10 fuel consuming ï¿½Stopsï¿½ over the past 12 months.
+
 Select Top 10
 	C.customerName as 'Customer Name',
 	SUM(DS.noOfGallons) as 'Total fuel consuming'	
@@ -20,7 +21,8 @@ ORDER BY
 	'Total fuel consuming' DESc
 	 
 
---Average fuel consumption per delivery, listed by “Stop” for the month. 
+--Average fuel consumption per delivery, listed by ï¿½Stopï¿½ for the month. 
+
 Select 
 	C.customerName as 'Customer Name',
 	AVG(DS.noOfGallons) as 'Average Fuel Consumption'	
@@ -41,27 +43,6 @@ GROUP BY
 ORDER BY
 	'Customer Name' 
 
-
---check the current fuel level for today 
-Declare @var1 int
-SELECT @var1 = (Select 
-	Sum(DS.noOfGallons) 
-	--DE.truckId as 'Truck Id',
-	--DE.eventDate
-from 
-	dbo.DeliveryStop DS
-Left Join 
-	dbo.DeliveryEvent DE
-on
-	DS.DeliveryEventId = DE.DeliveryEventId 
-WHERE
-	DAY(DE.eventDate) = DAY(GETDATE())AND 
-	MONTH(DE.eventDate) = Month(GETDATE()) AND 
-	YEAR(DE.eventDate) = YEAR(GETDATE()) AND
-	DE.truckId =1
-group By
-	DE.eventDate, DE.truckId)
-	SELECT @var1 as'Total'
 
 --Calculate how many gallons does this truck delivered today 
 
