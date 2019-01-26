@@ -49,8 +49,9 @@ namespace FuelDelivery.Controllers
                 Console.WriteLine(ex.StackTrace);
                 return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex);
             }
+
         }
-        //------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
         //save each stop data
         [HttpPost, Route("api/DeliveryStop/new")]
         public HttpResponseMessage AddNewStop(DeliveryStop deliveryStop)
@@ -67,8 +68,8 @@ namespace FuelDelivery.Controllers
             }
         }
 
-        //--------------------------------------------------------------------------------
-        // get the current level 
+//--------------------------------------------------------------------------------
+        // get the current fuel level 
 
         [HttpGet, Route("api/DeliveryStop/CurrentLevel")]
         [ResponseType(typeof(DeliveryStop))]
